@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+#root{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C0EBF9;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #467745;
+    text-align: center;
+  }
+  input::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    color: #467745;
+    opacity: 0.5;
+  }
+  #root > form > input[type=text]{
+    max-width: 600px;
+    height: 64px;
+    border: 0px;
+  }
+  textarea::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #467745;
+    padding: 10px;
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+#root > form > textarea{
+    max-width: 600px;
+    height: 120px;
+    border: 0px;
+    resize: none;
+}
+#root > form > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;  
+    
+    }
+
+
+#root > form > div > div{
+    padding-bottom: 10px;
+
+}
+#root > form > div > a > div{
+    padding-bottom: 10px;
+
+
+}
+p{
+    font-family:'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #467745;
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    background-color: #467745;
+    color: #C0EBF9;
+    max-width: 280px;
+    height: 80px;
+    align-self: center;
+    border: 0px;
+    padding-inline: 40px;
+    display: block; 
+    margin: auto
+
+}
+form div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+a{
+    color: #467745;
+    font-weight: 400;
+}
+
+
+
+  @media only screen and (max-width: 640px) {
+    form{
+        margin: 20px;
+    }
+    h1 {
+      text-align: left;
+    }
+    #root > form > input[type=text]{
+
+        padding-left: 20px;
+
+    }
+    textarea{
+        padding-left: 20px;
+
+
+    }
+}
